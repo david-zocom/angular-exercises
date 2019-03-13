@@ -1,0 +1,11 @@
+<div class="counter">
+	The value is: {{ value }}
+	<button (click)="increase()">+1</button>
+	<button (click)="decrease()"
+		[disabled]="disableDecrease"
+		>-1</button>
+	<!-- <button (click)="decrease()"
+		*ngIf="!disableDecrease"
+		>-1</button> -->
+	<button (click)="reset()">Reset!</button>
+</div>
